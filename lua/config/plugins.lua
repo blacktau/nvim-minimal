@@ -64,6 +64,7 @@ vim.keymap.set('n', '<leader>ff', '<cmd>Pick files<cr>', { desc = 'Search all fi
 vim.keymap.set('n', '<leader>fg', '<cmd>Pick grep_live<cr>', { desc = 'Search in project' })
 vim.keymap.set('n', '<leader>fd', '<cmd>Pick diagnostic<cr>', { desc = 'Search diagnostics' })
 vim.keymap.set('n', '<leader>fs', '<cmd>Pick buf_lines<cr>', { desc = 'Buffer local search' })
+vim.keymap.set('n', '<leader>qq', '<cmd>quitall<cr>', { desc = 'Quit' })
 
 local mini_statusline = require('mini.statusline')
 
