@@ -1,5 +1,9 @@
 vim.cmd.colorscheme('tokyonight')
 
+-- vim.lsp.config("*", {
+-- 	capabilities = vim.lsp.protocol.make_client_capabilities()
+-- })
+
 require('nvim-treesitter.configs').setup({
 	highlight = { enable = true, },
 	auto_install = true,
@@ -110,4 +114,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	end,
 })
 
-
+require('mason').setup()
+require('mason-lspconfig').setup {
+	ensure_installed = { "lua_ls" }
+}

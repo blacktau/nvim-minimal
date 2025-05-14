@@ -11,7 +11,12 @@ return {
 		{ "echasnovski/mini.nvim", branch = 'main' },
 		{ "nvim-treesitter/nvim-treesitter", build = ':TSUpdate' },
     -- lsp
-    "neovim/nvim-lspconfig",
+		"neovim/nvim-lspconfig",
+		"mason-org/mason.nvim",
+		"mason-org/mason-lspconfig.nvim",
+		"nvimtools/none-ls.nvim"
+
+		
     -- "onsails/lspkind-nvim",
 
     -- autocomplete
