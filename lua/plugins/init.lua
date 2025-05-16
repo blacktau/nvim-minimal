@@ -14,8 +14,8 @@ return {
 		"neovim/nvim-lspconfig",
 		"mason-org/mason.nvim",
 		"mason-org/mason-lspconfig.nvim",
-		"nvimtools/none-ls.nvim"
-
+		"nvimtools/none-ls.nvim",
+		{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
 		
     -- "onsails/lspkind-nvim",
 

@@ -1,5 +1,5 @@
 vim.cmd.colorscheme('tokyonight')
-
+vim.opt.termguicolors = true
 -- vim.lsp.config("*", {
 -- 	capabilities = vim.lsp.protocol.make_client_capabilities()
 -- })
@@ -66,6 +66,9 @@ vim.keymap.set('n', '<leader>fd', '<cmd>Pick diagnostic<cr>', { desc = 'Search d
 vim.keymap.set('n', '<leader>fs', '<cmd>Pick buf_lines<cr>', { desc = 'Buffer local search' })
 vim.keymap.set('n', '<leader>qq', '<cmd>quitall<cr>', { desc = 'Quit' })
 
+vim.keymap.set('n', '<S-l>', '<cmd>bn<cr>', { desc = 'Buffer Next' })
+vim.keymap.set('n', '<S-h>', '<cmd>bp<cr>', { desc = 'Buffer Previous' })
+
 local mini_statusline = require('mini.statusline')
 
 local function statusline()
@@ -119,3 +122,4 @@ require('mason').setup()
 require('mason-lspconfig').setup {
 	ensure_installed = { "lua_ls" }
 }
+require('bufferline').setup{}
